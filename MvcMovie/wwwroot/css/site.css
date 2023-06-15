@@ -1,0 +1,78 @@
+/* https://coolors.co/090039-65181c-d5a337-78ffc9 */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik&display=swap');
+
+:root {
+    --primary-color: #090039;
+    --secondary-color: #65181C;
+    --accent1-color: #D5A337;
+    --accent2-color: #78FFC9;
+
+    --heading-font: 'Oswald', Arial, sans-serif;
+    --paragraph-font: 'Rubik', Helvetica, sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.dropdown {
+    appearance: menulist;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
+
+.white-on-blue {
+    color: white !important;
+    background-color: var(--primary-color) !important;
+}
+
+.white-on-red {
+    color: white !important;
+    background-color: var(--secondary-color) !important;
+}
+
+.btn {
+    background-color: var(--accent1-color);
+    padding: 6px 24px;
+    color: black;
+    margin: .5rem 0 .5rem 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: var(--accent2-color);
+}
+
+.btn-danger:hover {
+    color: white;
+    background-color: darkred;
+}
+
+label {
+    padding-top: 1rem;
+}
+
